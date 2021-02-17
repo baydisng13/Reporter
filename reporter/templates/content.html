@@ -1,0 +1,24 @@
+{%extends 'base.html' %}
+{% block title %} Prime | Home {% endblock %}
+{% block content %}
+<br/>
+<img src="https://www.thereporterethiopia.com{{news.image}}" width="100%" alt="" srcset="">
+<br>
+<br> 
+<br>
+<br>
+<h1>{{news.title}}</h1>
+<span> {{news.date}} </span>
+<span> {{news.categories}} </span>
+<br>
+<span> By {{news.author}} </span>
+<br>
+<br>
+<br>
+
+{% for p in news.body %}
+<p> {{p}} </p>
+{% endfor %}
+<br/>
+
+{% endblock %}
